@@ -13,5 +13,5 @@ app.post('/user/login', (req, res) => {
 });
 
 module.exports = {
-  createuserroust: createuserroust
+  userRouter: userRouter
 }
