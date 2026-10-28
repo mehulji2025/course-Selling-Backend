@@ -13,7 +13,7 @@ app.use("/api/v1/admin",adminRouter);
 
 
 async function main(){
-await mongoose.connect("mongodb+srv://mehul7818974007_db_user:bagywi6vw3PNqLSW@cluster0.ucewqlo.mongodb.net/coursera-app");//  for mongoo url 
+await mongoose.connect(process.env.MONGO_URL);//  for mongoo url 
 app.listen(3000);
 console.log("start listing");
 }
